@@ -56,11 +56,11 @@ export default function Home() {
       companyName: "J Trust Bank",
       companyLogo: "/images.png",
       peopleAmount: "100+ people",
-      jobTitle: "Mobile app Intership",
+      jobTitle: "React Js Intership",
       salary: "$100-$200",
       location: "Phnom Penh",
       Emploment: "Full-Time",
-      DeadLine: "01-08-2025",
+      DeadLine: "01-08-2045",
     },
     {
       id: 5,
@@ -100,11 +100,11 @@ export default function Home() {
       companyName: "J Trust Bank",
       companyLogo: "/images.png",
       peopleAmount: "100+ people",
-      jobTitle: "Mobile app Intership",
+      jobTitle: "React Js Intership",
       salary: "$100-$200",
       location: "Phnom Penh",
       Emploment: "Full-Time",
-      DeadLine: "01-08-2025",
+      DeadLine: "01-08-2045",
     },
   ];
   return (
@@ -114,13 +114,13 @@ export default function Home() {
       {/* <Select /> */}
    <CardTips />
       <Typography
-        className="w-[1200px] mx-auto mt-10 text-[#212529] mb-10"
+        className="max-w-screen-xl mx-auto mt-10 text-[#212529] mb-10"
         fontSize="2xl"
       >
         Latest <span className="text-[#4B9960]">Interns</span>
       </Typography>
-      <main className="w-[1200px] mx-auto mt-10">
-        <div className="grid grid-cols-2 gap-[20px]">
+      <main className="max-w-screen-xl mx-auto mt-10 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 ">
           {Cardinfor.map((job) => (
             <div key={job.id} className="card-container">
               <Card className="w-[60px] h-[60px]" data={job} />

@@ -24,10 +24,10 @@ const Card: React.FC<CardProps> = ({ className = "", data }) => {
       {/* <main className="w-[1200px] mx-auto mt-10"> */}
         {/* Card */}
         {/* <div className="grid grid-cols-2 gap-[20px]"> */}
-          <div className="w-full h-[212px] rounded-xl shadow-lg p-5 font-Poppins">
+          <div className="w-full rounded-xl shadow-lg p-5 font-Poppins ">
             <div className="flex justify-between items-center">
               {/* image */}
-              <div className="flex">
+              <div className="flex items-center">
                 <Image
                   className="rounded-full"
                   src="/company.svg"
@@ -48,8 +48,8 @@ const Card: React.FC<CardProps> = ({ className = "", data }) => {
                 <Icon label="Star" />
               </div>
             </div>
-            <div className="flex">
-              <div>
+            <div className="flex ">
+              <div >
                 {/* position name */}
                 <Typography className="mt-5" fontSize="sm">
                   {jobTitle}
